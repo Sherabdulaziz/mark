@@ -1,0 +1,264 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+ 
+}
+body{
+    background-color: #e5e5e5;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+}
+.main-wrap {
+    
+    width: 400px;
+   
+    background: #FFFFFF;
+    border-radius: 14px;
+
+}
+.first-wrap {
+    padding: 20px 29px 20px 40px;
+    background: #6A96D8;
+border-radius: 14px 14px 0px 0px;
+display: flex;
+justify-content: space-between;
+text-align: center;
+}
+.name{
+    position: relative;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 20px;
+
+
+font-variant: small-caps;
+
+color: #FFFFFF;
+}
+.first-wrap{
+    
+}
+.name::before{ 
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    margin: auto 0px;
+    left: -16px;
+   
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+
+}
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+  .card-name:checked ~ .name-img{
+    transform: rotate(135deg);
+    transition: all 0.4s;
+    cursor: pointer;
+  }
+  .name-img{
+    display: flex;
+  }
+  .second-wrap{
+    padding: 24px 24px 20px 24px;
+  }
+  .wrap-title2{
+    position: relative;
+  
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+letter-spacing: 0.025em;
+font-variant: small-caps;
+
+color: #DDDDDD;
+  }
+  .wrap-title2::after{
+    content: "";
+    position: absolute;
+    width: 145px;
+    height: 1px;
+    background: #DDDDDD;;
+    top: 0px;
+    bottom: 0px;
+    margin: auto 0;
+    right: 0px;
+
+  }
+  .wrap-title2::before{
+    content: "";
+    position: absolute;
+    width: 145px;
+    height: 1px;
+    background: #DDDDDD;;
+    top: 0px;
+    bottom: 0px;
+    margin: auto 0;
+    left: 0px;
+
+  }
+  .list {
+    padding: 24px 24px 30px 24px;
+    margin-bottom: 30px;
+
+}
+.item{
+  position: relative;
+}
+.item::before {
+  content: "";
+  top: 18px;
+  left: -9px;
+  position:absolute;
+  border-top: 10px solid  #E6EDF6; ;
+  border-left: 10px solid transparent ;
+  border-right: 10px solid transparent;
+  /*border-bottom: 10px solid transparent ;*/
+  
+}
+.item:nth-child(1) , .item:nth-child(2){
+  width: 275px;
+
+}
+
+.item:nth-child(2n) {
+  margin-left: auto;
+  
+
+}
+
+.item:nth-child(3){
+ width: 89px;
+}
+.item:nth-child(4){
+  width:193px;
+}
+
+.item:not(:last-child){
+    margin-bottom: 16px;
+}
+.item:last-child::before{
+  border-top: none;
+}
+.item-time {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+margin-bottom: 6px;
+
+
+color: #DDDDDD;
+}
+.text {
+    padding: 9px 0 11px 10px;
+    background: #E6EDF6;
+    width: 100%;
+    
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+/* or 129% */
+
+letter-spacing: -0.03em;
+
+color: #000000;
+}
+.new-color{
+  background: #FFC2C1;
+border-radius: 1px;
+}
+.next-time{
+ 
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.item:nth-child(2)::before{
+ border: none;
+ left: auto;
+
+ 
+
+ border-top: 10px solid  #E6EDF6; ;
+ border-left: 10px solid transparent ;
+ border-right: 10px solid transparent;
+ right: -9px;
+ top: 20px;
+}
+.forma {
+  width: 100%;
+  position: relative;
+}
+.forma-inp {
+  outline: none;
+  position: relative;
+  padding: 13px 0 13px 20px;
+  width: 100%;
+  background: #FFFFFF;
+border: 1px solid #DDDDDD;
+border-radius: 54px;
+}
+.forma-inp:focus{
+  box-shadow: 0px 0px 5px 15px lightblue;
+}
+.btn {
+  position: absolute;
+  top: 0px;
+  right: 4px;
+  bottom: 0px;
+  margin: auto 0;
+  padding: 9px 26px;
+  background: #6A96D8;
+  
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+  border-radius: 100px ;
+
+text-align: center;
+font-variant: small-caps;
+border: none;
+
+color: #FFFFFF;
+height: 37px;
+cursor: pointer;
+
+}
+.forma-inp::placeholder{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+
+color: #BDBDBD;
+}
